@@ -1,8 +1,13 @@
 // Utilidades (VARIABLES - RESETEO)
 @import "./utilities/colors";
 @import "./utilities/fonts";
+@import "./utilities/clases-globales";
 @import "./utilities/reset";
 
 // Secciones
 @import "./sections/header";
+@import "./sections/index";
+@import "./sections/servicios";
+@import "../pages/nosotros.html";
+
 
