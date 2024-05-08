@@ -1,0 +1,215 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Radio+Canada+Big:ital,wght@0,400..700;1,400..700&display=swap");
+.flex-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+button {
+  padding: 5px;
+  background-color: grey;
+  color: black;
+  border-radius: 15px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #C9C19F;
+}
+.header .logo img {
+  width: 250px;
+}
+.header .navegacion ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header .navegacion ul li {
+  font-family: "Playfair Display", serif;
+  font-size: medium;
+  color: black;
+  list-style: none;
+}
+.header .navegacion ul li a {
+  text-decoration: none;
+  color: black;
+  padding: 0 10px;
+}
+
+.main-index h1 {
+  font-family: "Playfair Display", serif;
+  font-size: 50px;
+  color: black;
+  text-align: center;
+}
+.main-index h3 {
+  font-family: "Playfair Display", serif;
+  font-size: 35px;
+  color: black;
+  text-align: center;
+}
+.main-index .inicio {
+  display: flex;
+}
+
+.main-nosotros .container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas: "img-1 img-1 img-3" "img-2 img-5 img-3" "img-2 img-4 img-4";
+}
+.main-nosotros .container .img-1 {
+  grid-area: img-1;
+  display: grid;
+}
+.main-nosotros .container .img-2 {
+  grid-area: img-2;
+  display: grid;
+}
+.main-nosotros .container .img-3 {
+  grid-area: img-3;
+  display: grid;
+}
+.main-nosotros .container .img-4 {
+  grid-area: img-4;
+  display: grid;
+}
+.main-nosotros .container .img-5 {
+  grid-area: img-5;
+  display: grid;
+}
+
+.main-index .informacion {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.main-index img {
+  width: 300px;
+}
+.main-index p {
+  font-family: "Playfair Display", serif;
+  color: black;
+  width: 300px;
+  padding: 35px;
+}
+
+.main-index .paquetes {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.main-index .yoguita {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Radio Canada Big", sans-serif;
+  color: black;
+}
+.main-index button {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 5px 10px;
+  border-radius: 5px;
+  background-color: #7D7C7A;
+  color: black;
+  font-family: "Radio Canada Big", sans-serif;
+}
+.main-index button:hover {
+  color: #5B5B5B;
+}
+.main-index .yoga img {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  align-content: space-around;
+  height: 200px;
+  box-shadow: 0px 0px 2px 5px #C9C19F;
+  margin: 20px;
+}
+.main-index .elementos {
+  display: grid;
+  grid-template-columns: repeat(3, 200px);
+  align-items: center;
+  justify-items: center;
+  background-color: #C9C19F;
+  margin-top: 15px;
+  padding: 25px;
+}
+.main-index .elementos div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px;
+  padding: 15px;
+  text-align: center;
+}
+.main-index .elementos img {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  height: 200px;
+}
+.main-index .elementos button {
+  color: black;
+  font-family: "Radio Canada Big", sans-serif;
+  font-size: 10px;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+.main-index .elementos button:hover {
+  color: #5B5B5B;
+}
+
+.footer {
+  background-color: #5B5B5B;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.footer h4, .footer h5 {
+  font-family: "Radio Canada Big", sans-serif;
+  font-size: small;
+  color: black;
+}
+.footer .links ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer .links ul li {
+  font-family: "Radio Canada Big", sans-serif;
+  font-size: small;
+  color: black;
+  list-style: none;
+  margin-top: 20px;
+  padding: 10px;
+}
+.footer .links ul li a {
+  text-decoration: none;
+  color: black;
+  padding: 0 10px;
+}/*# sourceMappingURL=main.css.map */

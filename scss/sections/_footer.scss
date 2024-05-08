@@ -1,0 +1,35 @@
+.footer {
+    background-color: #5B5B5B;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    h4, h5{
+        font-family: $fuente-secundaria;
+        font-size: small;
+        color: black;
+    }
+    .links{
+        ul{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            li{
+                font-family: $fuente-secundaria;
+                font-size: small;
+                color: black;
+                list-style: none;
+                margin-top: 20px;
+                padding: 10px;
+                a{
+                    text-decoration: none;
+                    color: black;
+                    padding: 0 10px;
+                }
+            }
+        }
+    }
+}
+
+
+

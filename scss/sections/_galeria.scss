@@ -1,0 +1,35 @@
+.main-nosotros {
+    .container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        grid-template-areas:
+            "img-1 img-1 img-3"
+            "img-2 img-5 img-3"
+            "img-2 img-4 img-4";
+    .img-1 {
+        grid-area: img-1;
+        display: grid;
+
+    }
+    .img-2 {
+        grid-area: img-2;
+        display: grid;
+    }
+    .img-3 {
+        grid-area: img-3;
+        display: grid;
+
+    }
+    .img-4 {
+        grid-area: img-4;
+        display: grid;
+    }
+    .img-5 {
+        grid-area: img-5;
+        display: grid;
+    }
+}
+}
