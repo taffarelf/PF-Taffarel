@@ -1,0 +1,18 @@
+.formulario{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    padding-bottom: 25px;
+    p{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        font-size: smaller;
+    }
+    input{
+        font-family: $fuente-principal;
+        font-size: 15px;
+    }
+}

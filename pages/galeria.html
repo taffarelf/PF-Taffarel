@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/style.css">
     <title>Galeria</title>
 </head>
@@ -12,7 +13,7 @@
     <!-- Menú de Navegación -->
         <header class="header">
             <div class="logo">
-                <img src="https://s.tmimgcdn.com/scr/1200x627/70900/iconic-meditation-yoga-zen-logo-template_70995-2-original.jpg"alt="Yoga">
+                <img src="https://cdn.pixabay.com/photo/2018/04/12/04/39/om-3312546_640.png"alt="Yoga">
             </div>
             <nav class="navegacion">
                 <ul>
@@ -25,26 +26,67 @@
             </nav>
         </header>
 
+        <div class="collapse" id="navbarToggleExternalContent" data-bs-theme="dark">
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="./nosotros.html">Nosotros</a></li>
+                <li><a href="./galeria.html">Galeria</a></li>
+                <li><a href="./productos.html">Productos</a></li>
+                <li><a href="./contacto.html">Contacto</a></li>
+            </ul>
+        </div>
+        <nav class="navbar navbar-dark">
+            <div class="container-fluid">
+                <div class="navegation">
+                    <img class="nav-logo1" src="https://cdn.pixabay.com/photo/2018/04/12/04/39/om-3312546_640.png" alt="logo">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+            </div>
+        </nav>
+
     <!-- Contenido Principal -->
-    <main class="main-nosotros">
-        <div class="container">
-            <div class="img-1">
-                <img src="https://www.theclassyoga.com/wp-content/uploads/2021/05/Perro-boca-arriba.jpg" alt="perro-boca-arriba">
+    <main class="main-index">
+        <h1>Galeria</h1>
+        <div id="carouselExampleIndicators" class="carousel slide">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
             </div>
-            <div class="img-2">
-                <img src="https://plus.unsplash.com/premium_photo-1673796846126-3ee53e6055cc?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA==" alt="postura-niño">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="https://www.theclassyoga.com/wp-content/uploads/2021/05/Perro-boca-arriba.jpg"
+                        class="d-block w-100" alt="Perro-boca-arriba">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://content.cuerpomente.com/medio/2024/03/04/postura-yoga-tonificar-cuerpo-entero4_e184ab5e_240304105350_1280x720.jpg"
+                        class="d-block w-100" alt="Plancha-Lateral">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://www.bupasalud.com/sites/default/files/styles/640_x_400/public/articulos/2023-09/fotos/mujeres-practicando-yoga-en-el-gimnasio.jpg?itok=-pbSBO8N"
+                        class="d-block w-100" alt="Clase-grupal">
+                </div>
             </div>
-            <div class="img-3">
-                <img src="https://as2.ftcdn.net/v2/jpg/02/52/86/41/500_F_252864184_MK3QRMPwxLmowbsxelCEC8jf0J4hTOCf.jpg" alt="estiramiento-cadera">
-            </div>
-            <div class="img-4">
-                <img src="https://content.cuerpomente.com/medio/2024/03/04/postura-yoga-tonificar-cuerpo-entero4_e184ab5e_240304105350_1280x720.jpg" alt="plancha-lateral">
-            </div>
-            <div class="img-5">
-                <img src="https://cdn.pixabay.com/photo/2017/01/09/22/47/woman-1967892_640.jpg" alt="namaste">
-            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
         </div>
     </main>
+
 
     <!-- Pie de Página -->
     <footer class="footer">
@@ -59,6 +101,6 @@
         </div>
     </footer>
 
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>

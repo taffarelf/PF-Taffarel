@@ -13,5 +13,128 @@
     }
     .inicio{
         display: flex;
+        justify-content: center;
+        text-align: center;
+        font-family: $fuente-principal;
+        font-size: medium;
+        padding: 15px;
+        // transform: scale(0.7);
+        // transition: 0.3s ease-in-out;
+    }
+    i {
+        position: fixed;
+        top: 90%;
+        right: 20px;
+        background-color: #4e6724;
+        color: #ffffff;
+        font-family: Montserrat;
+        padding: 15px;
+        border-radius: 15px;
+    }
+}
+.header{
+    padding: 20px;
+    .logo img{
+    width: 60px;
+    }
+}
+.navbar{
+    display: none;
+}
+
+@media (max-width: 576px){
+    .navegacion{
+        background-color: #C9C19F;
+        height: 120px;
+        margin-top: -50px;
+    }
+    .navegacion a{
+        color: black;
+    }
+    .navegacion ul{
+        font-size: small;
+    }
+    .navegacion li{
+        display: none;
+    }
+    .navbar{
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+    .logo img{
+        display: none;
+    }
+    .nav-logo1{
+        width: 60px;
+    }
+    .navegation{
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: 1fr;
+        gap: 0px 0px;
+    }
+    .main-index{
+        h1{
+            font-size: 40px;
+        }
+        h3{
+            font-size: 30px;
+        }
+    }
+    .bg-dark {
+        background-color: #C9C19F !important;
+        }
+    .collapse {
+        background-color: #C9C19F;
+        }
+    .collapse ul {
+        list-style-type: none;
+        }
+    .collapse li a {
+        text-decoration: none;
+        list-style-type: none;
+        color: black;
+        font-family: $fuente-principal;
+        font-size: small;
+        display: flex;
+        justify-content: center;
+        }
+    .collapsing {
+        background-color: #C9C19F;
+        }
+    .collapsing ul {
+        list-style-type: none;
+        }
+    .collapsing li a {
+        text-decoration: none;
+        color: black;
+        font-family: $fuente-principal;
+        font-size: small;
+        display: flex;
+        justify-content: center;
+        }
+    .navbar-toggler {
+        margin-top: 22px;
+        }
+    .inicio img{
+        height: 500px;
+        margin-top: 25px;
+    }
+    .header{
+        display: flex;
+        flex-wrap: wrap;
+        padding: 20px;
+        .logo img{
+        width: 60px;
+        }
+        .navegacion{
+            flex: 1;
+            min-width: 250px;
+        }
+        .logo{
+            flex: 2;
+        }
     }
 }

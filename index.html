@@ -4,19 +4,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <meta name="description" content="El hatha yoga es el estilo más popular de yoga en Occidente. Se trata de una de las variedades más suaves y lentas de esta disciplina. Por eso, se considera adecuada para los principiantes. Esta página se enfoca en aprendizaje sobre el Hatha Yoga, la venta de productos de yoga y clases grupales e individuales">
+    <meta name="keywords" content="HTML, ASP, JS, META, YOGA, HATHA YOGA, BUDA, BUDISMO, VIDA, MEDITACION, ESPIRITUALIDAD, ZEN, LIBERACION, ASANAS, POSTURAS, LUZ, CONEXION">
+    <link rel="shortcut icon" href="./resources/flor-de-loto.svg" type="image/x-icon">
     <link rel="stylesheet" href="./css/style.css">
     <title>Hatha Yoga</title>
 </head>
 
 <body>
     <!-- Menú de Navegación -->
-    <header class="header">
+    <header class="header col-12 col-sm-12 col-md-12 col-lg-12">
         <div class="logo">
-            <img src="https://s.tmimgcdn.com/scr/1200x627/70900/iconic-meditation-yoga-zen-logo-template_70995-2-original.jpg"alt="Yoga">
+            <img src="https://cdn.pixabay.com/photo/2018/04/12/04/39/om-3312546_640.png"alt="Yoga">
         </div>
         <nav class="navegacion">
-            <ul>
+            <ul class="col-sm-12">
                 <li><a href="./index.html">Inicio</a></li>
                 <li><a href="./pages/nosotros.html">Nosotros</a></li>
                 <li><a href="./pages/galeria.html">Galeria</a></li>
@@ -26,12 +30,34 @@
         </nav>
     </header>
 
+    <div class="collapse" id="navbarToggleExternalContent" data-bs-theme="dark">
+        <ul>
+            <li><a href="./index.html">Inicio</a></li>
+            <li><a href="./pages/nosotros.html">Nosotros</a></li>
+            <li><a href="./pages/nosotros.html">Galeria</a></li>
+            <li><a href="./pages/productos.html">Productos</a></li>
+            <li><a href="./pages/contacto.html">Contacto</a></li>
+        </ul>
+    </div>
+    <nav class="navbar navbar-dark">
+        <div class="container-fluid">
+            <div class="navegation">
+                <img class="nav-logo1" src="https://cdn.pixabay.com/photo/2018/04/12/04/39/om-3312546_640.png" alt="logo">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
     <main class="main-index">
         <h1>Hatha Yoga</h1>
         <h3>"Lo que eres es lo que has sido. Lo que serás es lo que haces a partir de ahora".</h3>
         <div class="inicio">
             <img src="https://cdn.pixabay.com/photo/2023/11/08/10/30/buddha-8374521_1280.jpg" alt="buda">
-            <p></p>
+            <p>En sánscrito, "Hatha yoga" significa disciplina de fuerza, una fuerza que busca el equilibrio de las polaridades que se hallan en nuestro interior. De hecho, ha significa sol y representa la energía más activa y tha, luna, que se vincula la relajación y al descanso. Ambas energías simbolizan esta dualidad de equilibrio entre energía solar y energía lunar, de la acción y la relajación. Energía que identificamos y equilibramos en nosotros mismos.</p>
         </div>
 
         <div id="carouselExampleIndicators" class="carousel slide">
@@ -67,6 +93,11 @@
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Next</span>
             </button>
+        </div>
+        <div class="wap">
+            <a href="">
+                <i class="fa-brands fa-whatsapp"></i>
+            </a>
         </div>
     </main>
 
