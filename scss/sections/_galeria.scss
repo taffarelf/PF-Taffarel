@@ -1,35 +1,35 @@
-.main-nosotros {
-    .container {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: repeat(3, 1fr);
-        gap: 0px 0px;
-        grid-auto-flow: row;
-        grid-template-areas:
-            "img-1 img-1 img-3"
-            "img-2 img-5 img-3"
-            "img-2 img-4 img-4";
-    .img-1 {
-        grid-area: img-1;
-        display: grid;
-
+.main-galeria{
+    h1{
+        @extend .main;
     }
-    .img-2 {
-        grid-area: img-2;
-        display: grid;
+    h3{
+        background-color: #C9C19F;
+        margin-top: 8px;
     }
-    .img-3 {
-        grid-area: img-3;
-        display: grid;
-
+    .inicio{
+        @extend .flex-column;
+        font-family: $fuente-principal;
     }
-    .img-4 {
-        grid-area: img-4;
-        display: grid;
+    img{
+        width: 400px;
     }
-    .img-5 {
-        grid-area: img-5;
-        display: grid;
+    p{
+        width: 850px;
+        text-align: center;
+        margin-top: 8px;
     }
-}
+    .carousel{
+        width: 50%;
+    }
+    .carousel-item{
+        width: auto;
+        height: 500px;
+        transition: transform 0s ease-in-out;
+    }
+    .carousel-item.active{
+        display: flex;
+    }
+    button{
+        height: 70px;
+    }
 }

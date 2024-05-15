@@ -1,12 +1,18 @@
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Radio+Canada+Big:ital,wght@0,400..700;1,400..700&display=swap");
-.flex-row {
+.main, .main-galeria h1, .main-nosotros h1 {
+  font-family: "Playfair Display", serif;
+  font-size: 50px;
+  color: black;
+  text-align: center; }
+
+.flex-row, .main-nosotros .informacion {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap; }
 
-.flex-column {
+.flex-column, .main-galeria .inicio, .main-nosotros .informacion-b {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -52,19 +58,28 @@ button {
 
 .main-index h3 {
   font-family: "Playfair Display", serif;
-  font-size: 35px;
+  font-size: 30px;
   color: black;
   text-align: center; }
 
 .main-index .inicio {
   display: flex;
   justify-content: center;
+  align-items: center;
   text-align: center;
-  font-family: "Playfair Display", serif;
-  font-size: medium;
-  padding: 15px; }
+  padding: 15px;
+  font-family: "Playfair Display", serif; }
+  .main-index .inicio img {
+    width: 300px; }
+    .main-index .inicio img:hover {
+      transform: scale(0.7);
+      transition: 0.8s ease-in-out; }
+  .main-index .inicio p {
+    font-family: "Playfair Display", serif;
+    color: black;
+    padding: 35px; }
 
-.main-index i {
+i {
   position: fixed;
   top: 90%;
   right: 20px;
@@ -73,6 +88,20 @@ button {
   font-family: Montserrat;
   padding: 15px;
   border-radius: 15px; }
+
+.carousel {
+  width: 50%; }
+
+.carousel-item {
+  width: auto;
+  height: 500px;
+  transition: transform 0s ease-in-out; }
+
+.carousel-item.active {
+  display: flex; }
+
+button {
+  height: 70px; }
 
 .header {
   padding: 20px; }
@@ -153,39 +182,50 @@ button {
     .header .logo {
       flex: 2; } }
 
-.main-nosotros .container {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(3, 1fr);
-  gap: 0px 0px;
-  grid-auto-flow: row;
-  grid-template-areas: "img-1 img-1 img-3" "img-2 img-5 img-3" "img-2 img-4 img-4"; }
-  .main-nosotros .container .img-1 {
-    grid-area: img-1;
-    display: grid; }
-  .main-nosotros .container .img-2 {
-    grid-area: img-2;
-    display: grid; }
-  .main-nosotros .container .img-3 {
-    grid-area: img-3;
-    display: grid; }
-  .main-nosotros .container .img-4 {
-    grid-area: img-4;
-    display: grid; }
-  .main-nosotros .container .img-5 {
-    grid-area: img-5;
-    display: grid; }
+.main-galeria h3 {
+  background-color: #C9C19F;
+  margin-top: 8px; }
 
-.main-index .informacion {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap; }
+.main-galeria .inicio {
+  font-family: "Playfair Display", serif; }
 
-.main-index img {
+.main-galeria img {
+  width: 400px; }
+
+.main-galeria p {
+  width: 850px;
+  text-align: center;
+  margin-top: 8px; }
+
+.main-galeria .carousel {
+  width: 50%; }
+
+.main-galeria .carousel-item {
+  width: auto;
+  height: 500px;
+  transition: transform 0s ease-in-out; }
+
+.main-galeria .carousel-item.active {
+  display: flex; }
+
+.main-galeria button {
+  height: 70px; }
+
+.main-nosotros h3 {
+  font-family: "Playfair Display", serif;
+  background-color: #c9c19f;
+  margin-top: 8px; }
+
+.main-nosotros .informacion {
+  font-family: "Playfair Display", serif; }
+
+.main-nosotros .informacion-b {
+  margin-bottom: 8px; }
+
+.main-nosotros img {
   width: 300px; }
 
-.main-index p {
+.main-nosotros p {
   font-family: "Playfair Display", serif;
   color: black;
   width: 300px;

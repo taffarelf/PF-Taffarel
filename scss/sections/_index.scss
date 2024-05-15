@@ -7,20 +7,32 @@
     }
     h3{
         font-family: $fuente-principal;
-        font-size: 35px;
+        font-size: 30px;
         color: black;
         text-align: center;
     }
     .inicio{
         display: flex;
         justify-content: center;
+        align-items: center;
         text-align: center;
-        font-family: $fuente-principal;
-        font-size: medium;
         padding: 15px;
-        // transform: scale(0.7);
-        // transition: 0.3s ease-in-out;
+        font-family: $fuente-principal;
+        img{
+            width: 300px;
+            &:hover{
+                transform: scale(0.7);
+                transition: 0.8s ease-in-out;
+            }
+        }
+        p{
+            font-family: $fuente-principal;
+            color: black;
+            padding: 35px;
+        }
     }
+    }
+
     i {
         position: fixed;
         top: 90%;
@@ -31,7 +43,21 @@
         padding: 15px;
         border-radius: 15px;
     }
-}
+    .carousel{
+        width: 50%;
+    }
+    .carousel-item{
+        width: auto;
+        height: 500px;
+        transition: transform 0s ease-in-out;
+    }
+    .carousel-item.active{
+        display: flex;
+    }
+    button{
+        height: 70px;
+    }
+
 .header{
     padding: 20px;
     .logo img{

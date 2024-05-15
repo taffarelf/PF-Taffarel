@@ -1,9 +1,19 @@
-.main-index{
+.main-nosotros{
+    h1{
+        @extend .main;
+    }
+    h3{
+        font-family: $fuente-principal;
+        background-color: #c9c19f;
+        margin-top: 8px;
+    }
     .informacion{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-wrap: wrap;
+        @extend .flex-row;
+        font-family: $fuente-principal;
+    }
+    .informacion-b{
+        @extend .flex-column;
+        margin-bottom: 8px;
     }
     img{
         width: 300px;
