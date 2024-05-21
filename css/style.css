@@ -12,7 +12,7 @@
   align-items: center;
   flex-wrap: wrap; }
 
-.flex-column, .main-galeria .inicio, .main-nosotros .informacion-b {
+.flex-column, .main-galeria .inicio, .main-nosotros .informacion-b, .main-nosotros .clases-prescenciales, .main-index .venta {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -222,6 +222,14 @@ button {
 .main-nosotros .informacion-b {
   margin-bottom: 8px; }
 
+.main-nosotros .clases-prescenciales h3 {
+  font-family: "Playfair Display", serif;
+  font-size: larger;
+  color: black;
+  background-color: #c9c19f;
+  margin-top: 8px;
+  margin-bottom: 8px; }
+
 .main-nosotros img {
   width: 300px; }
 
@@ -244,14 +252,28 @@ button {
   font-family: "Radio Canada Big", sans-serif;
   color: black; }
 
-.main-index button {
+.main-index .paquetes-venta {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  background-image: url(https://img.freepik.com/free-photo/abstract-luxury-light-cream-beige-brown-like-cotton-silk-texture-pattern-background_1258-71591.jpg);
+  margin-top: 50px; }
+
+.main-index .venta {
   margin-top: 10px;
-  margin-bottom: 10px;
-  padding: 5px 10px;
-  border-radius: 5px;
-  background-color: #7D7C7A;
+  margin-bottom: 10px; }
+  .main-index .venta h4 {
+    font-family: "Radio Canada Big", sans-serif;
+    font-size: 15px;
+    color: black; }
+
+.main-index button {
+  font-family: "Radio Canada Big", sans-serif;
+  font-size: small;
+  background-color: #C9C19F;
   color: black;
-  font-family: "Radio Canada Big", sans-serif; }
+  height: 40px; }
 
 .main-index button:hover {
   color: #5B5B5B; }
@@ -266,31 +288,35 @@ button {
   box-shadow: 0px 0px 2px 5px #C9C19F;
   margin: 20px; }
 
-.main-index button {
-  color: black;
+.main-index h6 {
   font-family: "Radio Canada Big", sans-serif;
-  font-size: 10px;
-  padding: 5px 10px;
-  border-radius: 5px; }
+  font-size: small;
+  text-align: center;
+  color: black;
+  background-color: #C9C19F;
+  height: 20px;
+  margin-top: 20px; }
 
-.main-index button:hover {
-  color: #5B5B5B; }
+.main-index .animate__animated.animate__fadeInRight {
+  --animate-duration: 5s; }
 
-.formulario {
+.main-index .formulario1 {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   margin-top: 10px;
   padding-bottom: 25px; }
-  .formulario p {
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    font-size: smaller; }
-  .formulario input {
-    font-family: "Playfair Display", serif;
-    font-size: 15px; }
+
+.main-index p {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  font-size: smaller; }
+
+.main-index input {
+  font-family: "Playfair Display", serif;
+  font-size: 15px; }
 
 .footer {
   background-color: #5B5B5B;

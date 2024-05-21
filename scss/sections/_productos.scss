@@ -12,14 +12,30 @@
         font-family: $fuente-secundaria;
         color: black;
     }
-    button{
+    .paquetes-venta{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        background-image: url(https://img.freepik.com/free-photo/abstract-luxury-light-cream-beige-brown-like-cotton-silk-texture-pattern-background_1258-71591.jpg);
+        margin-top: 50px;
+    }
+    .venta{
+        @extend .flex-column;
         margin-top: 10px;
         margin-bottom: 10px;
-        padding: 5px 10px;
-        border-radius: 5px;
-        background-color: #7D7C7A;
-        color: black;
+        h4{
+            font-family: $fuente-secundaria;
+            font-size: 15px;
+            color: black;
+        }
+    }
+    button{
         font-family: $fuente-secundaria;
+        font-size: small;
+        background-color: #C9C19F;
+        color: black;
+        height: 40px;
     }
     button:hover{
         color: #5B5B5B;
@@ -34,14 +50,16 @@
         box-shadow: 0px 0px 2px 5px #C9C19F;
         margin: 20px;
     }
-        button{
-            color: black;
-            font-family: $fuente-secundaria;
-            font-size: 10px;
-            padding: 5px 10px;
-            border-radius: 5px;
-        }
-        button:hover{
-            color: #5B5B5B;
-        }
+    h6{
+        font-family: $fuente-secundaria;
+        font-size: small;
+        text-align: center;
+        color: black;
+        background-color: #C9C19F;
+        height: 20px;
+        margin-top: 20px;
     }
+    .animate__animated.animate__fadeInRight{
+        --animate-duration: 5s;
+    }
+}

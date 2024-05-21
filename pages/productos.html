@@ -1,10 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="shortcut icon" href="../resources/flor-de-loto.svg" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="stylesheet" href="../css/style.css">
     <title>Productos</title>
 </head>
@@ -12,24 +15,13 @@
 
 <body>
     <!-- Menú de Navegación -->
-        <header class="header">
-            <!-- Logo -->
-            <div class="logo">
-                <img src="https://cdn.pixabay.com/photo/2018/04/12/04/39/om-3312546_640.png"alt="Yoga">
-            </div>
-    <!-- Barra de Navegación -->
-            <nav class="navegacion">
-                <ul>
-                    <li><a href="../index.html">Inicio</a></li>
-                    <li><a href="./nosotros.html">Nosotros</a></li>
-                    <li><a href="./galeria.html">Galeria</a></li>
-                    <li><a href="./productos.html">Productos</a></li>
-                    <li><a href="./contacto.html">Contacto</a></li>
-                </ul>
-            </nav>
-        </header>
-
-        <div class="collapse" id="navbarToggleExternalContent" data-bs-theme="dark">
+    <header class="header">
+        <!-- Logo -->
+        <div class="logo">
+            <img src="https://cdn.pixabay.com/photo/2018/04/12/04/39/om-3312546_640.png" alt="Yoga">
+        </div>
+        <!-- Barra de Navegación -->
+        <nav class="navegacion">
             <ul>
                 <li><a href="../index.html">Inicio</a></li>
                 <li><a href="./nosotros.html">Nosotros</a></li>
@@ -37,51 +29,92 @@
                 <li><a href="./productos.html">Productos</a></li>
                 <li><a href="./contacto.html">Contacto</a></li>
             </ul>
+        </nav>
+    </header>
+
+    <div class="collapse" id="navbarToggleExternalContent" data-bs-theme="dark">
+        <ul>
+            <li><a href="../index.html">Inicio</a></li>
+            <li><a href="./nosotros.html">Nosotros</a></li>
+            <li><a href="./galeria.html">Galeria</a></li>
+            <li><a href="./productos.html">Productos</a></li>
+            <li><a href="./contacto.html">Contacto</a></li>
+        </ul>
+    </div>
+    <nav class="navbar navbar-dark">
+        <div class="container-fluid">
+            <div class="navegation">
+                <img class="nav-logo1" src="https://cdn.pixabay.com/photo/2018/04/12/04/39/om-3312546_640.png"
+                    alt="logo">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
         </div>
-        <nav class="navbar navbar-dark">
-            <div class="container-fluid">
-                <div class="navegation">
-                    <img class="nav-logo1" src="https://cdn.pixabay.com/photo/2018/04/12/04/39/om-3312546_640.png" alt="logo">
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
+    </nav>
+
+    <!-- Contenido Principal -->
+    <main class="main-index">
+        <h1>Nuestros Productos</h1>
+        <section class="yoga">
+            <div class="paquetes">
+                <div class="yoguita">
+                    <img src="https://propschile.cl/img/anblog/b/b-64e7d2d0af905-anblog_thumb.png"
+                        alt="clases-individuales">
+                    <h4>Clases Individuales</h4>
+                    <button>Adquirir</button>
+                </div>
+                <div class="yoguita">
+                    <img src="https://www.cnnbrasil.com.br/wp-content/uploads/sites/12/2023/04/beneficios-do-yoga.jpg"
+                        alt="clases-grupales">
+                    <h4>Clases Grupales</h4>
+                    <button>Adquirir</button>
+                </div>
+                <div class="yoguita">
+                    <img src="https://museobarriodeflores.com.ar/wp-content/uploads/2022/01/YogaenelMuseo.jpg"
+                        alt="meditando-juntos">
+                    <h4>Meditación Grupal</h4>
+                    <button>Adquirir</button>
+                </div>
+                <div class="yoguita">
+                    <img src="https://www.samandi.es/blog/wp-content/uploads/2023/02/retiro-de-yoga.jpg"
+                        alt="retiro-julio">
+                    <h4>Retiro de Invierno, 2024</h4>
+                    <button>Adquirir</button>
                 </div>
             </div>
-        </nav>
-
-        <!-- Contenido Principal -->
-        <main class="main-index">
-            <h1>Nuestros Productos</h1>
-            <section class="yoga">
-                <div class="paquetes">
-                    <div class="yoguita">
-                        <img src="https://propschile.cl/img/anblog/b/b-64e7d2d0af905-anblog_thumb.png" alt="clases-individuales">
-                        <h4>Clases Individuales</h4>
-                        <button>Adquirir</button>
-                    </div>
-                    <div class="yoguita">
-                        <img src="https://www.cnnbrasil.com.br/wp-content/uploads/sites/12/2023/04/beneficios-do-yoga.jpg" alt="clases-grupales">
-                        <h4>Clases Grupales</h4>
-                        <button>Adquirir</button>
-                    </div>
-                    <div class="yoguita">
-                        <img src="https://museobarriodeflores.com.ar/wp-content/uploads/2022/01/YogaenelMuseo.jpg" alt="meditando-juntos">
-                        <h4>Meditación Grupal</h4>
-                        <button>Adquirir</button>
-                    </div>
-                    <div class="yoguita">
-                        <img src="https://www.samandi.es/blog/wp-content/uploads/2023/02/retiro-de-yoga.jpg" alt="retiro-julio">
-                        <h4>Retiro de Invierno, 2024</h4>
-                        <button>Adquirir</button>
-                    </div>
+        </section>
+        <h6 class="animate__animated animate__fadeInRight">Quedan disponibles los últimos cupos para el Retiro de Invierno 2024. No te pierdas de vivir esta
+            experiencia, consultanos!</h6>
+        <section class="yoga">
+            <div class="paquetes-venta">
+                <div class="venta">
+                    <img src="https://hips.hearstapps.com/elle-es/assets/17/16/1492781218-born-9.png"
+                        alt="indumentaria">
+                    <h4>Indumentaria</h4>
+                    <button>Ver más</button>
                 </div>
-            </section>
-        </main>
+                <div class="venta">
+                    <img src="https://i.pinimg.com/originals/6f/cd/ac/6fcdac720fc81e574315d5680873d8e7.jpg"
+                        alt="accesorios">
+                    <h4>Accesorios</h4>
+                    <button>Ver más</button>
+                </div>
+                <div class="venta">
+                    <img src="https://content.cuerpomente.com/medio/2021/05/18/cintas-de-yoga_15e42bf8_1500x1500.jpg"
+                        alt="elementos">
+                    <h4>Elementos</h4>
+                    <button>Ver más</button>
+                </div>
+            </div>
+
+        </section>
+    </main>
 
 
-        <!-- Pie de Página -->
+    <!-- Pie de Página -->
     <footer class="footer">
         <h4>Suscribite con nosotros</h4>
         <h5>2024, Escuela de Hatha Yoga</h5>
@@ -94,6 +127,9 @@
         </div>
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>
