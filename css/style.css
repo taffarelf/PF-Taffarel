@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Radio+Canada+Big:ital,wght@0,400..700;1,400..700&display=swap");
-.main, .main-galeria h1, .main-nosotros h1 {
+.main, .main-galeria h1, .main-nosotros h1, .main-contacto h1 {
   font-family: "Playfair Display", serif;
   font-size: 50px;
   color: black;
@@ -12,7 +12,7 @@
   align-items: center;
   flex-wrap: wrap; }
 
-.flex-column, .main-galeria .inicio, .main-nosotros .informacion-b, .main-nosotros .clases-prescenciales, .main-index .venta {
+.flex-column, .main-index .tipos-de-yoga, .main-galeria .inicio, .main-nosotros .informacion-b, .main-nosotros .clases-prescenciales, .main-productos .venta, .main-contacto .formulario {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -23,6 +23,12 @@ button {
   background-color: grey;
   color: black;
   border-radius: 15px; }
+
+.gradiente-vertical, .main-index .tipos-de-yoga {
+  background-image: linear-gradient(to top, #C9C19f, #7D7C7A); }
+
+.gradiente-horizontal, .main-galeria .inicio1 {
+  background-image: linear-gradient(to left, #C9C19F, #7D7C7A); }
 
 * {
   margin: 0;
@@ -76,8 +82,19 @@ button {
       transition: 0.8s ease-in-out; }
   .main-index .inicio p {
     font-family: "Playfair Display", serif;
+    font-size: medium;
     color: black;
-    padding: 35px; }
+    padding: 30px; }
+
+.main-index .tipos-de-yoga .estilos {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .main-index .tipos-de-yoga .estilos p {
+    font-family: "Playfair Display", serif;
+    font-size: 15px;
+    color: black;
+    width: 400px; }
 
 i {
   position: fixed;
@@ -89,127 +106,109 @@ i {
   padding: 15px;
   border-radius: 15px; }
 
-.carousel {
-  width: 50%; }
-
-.carousel-item {
-  width: auto;
-  height: 500px;
-  transition: transform 0s ease-in-out; }
-
-.carousel-item.active {
-  display: flex; }
-
-button {
-  height: 70px; }
-
 .header {
   padding: 20px; }
   .header .logo img {
     width: 60px; }
 
-.navbar {
-  display: none; }
+@media (max-width: 577px) {
+  .main-index .inicio {
+    display: flex;
+    flex-direction: column; }
+    .main-index .inicio img {
+      width: 250px; }
+  .main-nosotros .informacion img {
+    width: 250px; }
+  .main-nosotros .informacion p {
+    width: 250px; }
+  .main-nosotros .informacion-b iframe {
+    width: 450px; }
+  .main-galeria .inicio p {
+    width: 500px; }
+  .main-productos .animate__animated.animate__fadeInRight {
+    --animate-duration: 5s;
+    height: 40px; } }
 
-@media (max-width: 576px) {
+@media (max-width: 485px) {
   .navegacion {
-    background-color: #C9C19F;
-    height: 120px;
-    margin-top: -50px; }
-  .navegacion a {
-    color: black; }
-  .navegacion ul {
-    font-size: small; }
-  .navegacion li {
     display: none; }
-  .navbar {
-    display: block;
-    position: absolute;
-    top: 0;
-    right: 0; }
-  .logo img {
-    display: none; }
-  .nav-logo1 {
-    width: 60px; }
-  .navegation {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: 1fr;
-    gap: 0px 0px; }
-  .main-index h1 {
-    font-size: 40px; }
-  .main-index h3 {
-    font-size: 30px; }
+  .nav {
+    background-color: #C9C19F !important;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+  .nav a {
+    color: black;
+    text-decoration: none; }
+  .collapse {
+    background-color: #C9C19F !important;
+    font-family: "Playfair Display", serif;
+    text-decoration: none; }
+  .collapsing {
+    font-family: "Playfair Display", serif; }
   .bg-dark {
     background-color: #C9C19F !important; }
-  .collapse {
-    background-color: #C9C19F; }
-  .collapse ul {
-    list-style-type: none; }
-  .collapse li a {
-    text-decoration: none;
-    list-style-type: none;
-    color: black;
-    font-family: "Playfair Display", serif;
-    font-size: small;
-    display: flex;
-    justify-content: center; }
-  .collapsing {
-    background-color: #C9C19F; }
-  .collapsing ul {
-    list-style-type: none; }
-  .collapsing li a {
-    text-decoration: none;
-    color: black;
-    font-family: "Playfair Display", serif;
-    font-size: small;
-    display: flex;
-    justify-content: center; }
-  .navbar-toggler {
-    margin-top: 22px; }
-  .inicio img {
-    height: 500px;
-    margin-top: 25px; }
-  .header {
-    display: flex;
-    flex-wrap: wrap;
-    padding: 20px; }
-    .header .logo img {
-      width: 60px; }
-    .header .navegacion {
-      flex: 1;
-      min-width: 250px; }
-    .header .logo {
-      flex: 2; } }
+  .main-index h1 {
+    font-size: 35px; }
+  .main-index h3 {
+    font-size: 20px; }
+  .main-index .tipos-de-yoga .estilos img {
+    width: 250px; }
+  .main-index .tipos-de-yoga .estilos p {
+    font-size: 12px;
+    text-align: center;
+    width: 250px; }
+  .main-nosotros h1 {
+    font-size: 30px; }
+  .main-nosotros .informacion img {
+    width: 200px; }
+  .main-nosotros .informacion p {
+    width: 230px; }
+  .main-nosotros .informacion-b iframe {
+    width: 380px; }
+  .main-nosotros .clases-prescenciales iframe {
+    width: 300px; }
+  .main-galeria h1 {
+    font-size: 30px; }
+  .main-galeria .inicio img {
+    width: 350px !important; }
+  .main-galeria .inicio p {
+    width: 350px; }
+  .main-productos h1 {
+    font-size: 30px !important; }
+  .main-contacto h1 {
+    font-size: 30px;
+    color: black; }
+  .main-contacto .contacto {
+    width: 95% !important; } }
 
 .main-galeria h3 {
-  background-color: #C9C19F;
+  font-family: "Playfair Display", serif;
+  font-size: 20px;
+  color: black;
   margin-top: 8px; }
 
 .main-galeria .inicio {
   font-family: "Playfair Display", serif; }
+  .main-galeria .inicio p {
+    font-family: "Playfair Display", serif;
+    color: black;
+    text-align: center; }
+  .main-galeria .inicio img {
+    width: 400px; }
 
-.main-galeria img {
-  width: 400px; }
-
-.main-galeria p {
-  width: 850px;
+.main-galeria .inicio1 {
+  display: flex;
+  flex-direction: column;
   text-align: center;
-  margin-top: 8px; }
-
-.main-galeria .carousel {
-  width: 50%; }
+  align-items: center;
+  margin-bottom: 8px; }
 
 .main-galeria .carousel-item {
-  width: auto;
-  height: 500px;
   transition: transform 0s ease-in-out; }
 
 .main-galeria .carousel-item.active {
   display: flex; }
-
-.main-galeria button {
-  height: 70px; }
 
 .main-nosotros h3 {
   font-family: "Playfair Display", serif;
@@ -239,20 +238,26 @@ button {
   width: 300px;
   padding: 35px; }
 
-.main-index .paquetes {
+.main-productos h1 {
+  font-family: "Playfair Display", serif;
+  font-size: 50px;
+  color: black;
+  text-align: center; }
+
+.main-productos .paquetes {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   flex-wrap: wrap; }
 
-.main-index .yoguita {
+.main-productos .yoguita {
   display: flex;
   flex-direction: column;
   align-items: center;
   font-family: "Radio Canada Big", sans-serif;
   color: black; }
 
-.main-index .paquetes-venta {
+.main-productos .paquetes-venta {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -260,25 +265,25 @@ button {
   background-image: url(https://img.freepik.com/free-photo/abstract-luxury-light-cream-beige-brown-like-cotton-silk-texture-pattern-background_1258-71591.jpg);
   margin-top: 50px; }
 
-.main-index .venta {
+.main-productos .venta {
   margin-top: 10px;
   margin-bottom: 10px; }
-  .main-index .venta h4 {
+  .main-productos .venta h4 {
     font-family: "Radio Canada Big", sans-serif;
     font-size: 15px;
     color: black; }
 
-.main-index button {
+.main-productos button {
   font-family: "Radio Canada Big", sans-serif;
   font-size: small;
   background-color: #C9C19F;
   color: black;
   height: 40px; }
 
-.main-index button:hover {
+.main-productos button:hover {
   color: #5B5B5B; }
 
-.main-index .yoga img {
+.main-productos .yoga img {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
@@ -288,7 +293,7 @@ button {
   box-shadow: 0px 0px 2px 5px #C9C19F;
   margin: 20px; }
 
-.main-index h6 {
+.main-productos h6 {
   font-family: "Radio Canada Big", sans-serif;
   font-size: small;
   text-align: center;
@@ -297,26 +302,33 @@ button {
   height: 20px;
   margin-top: 20px; }
 
-.main-index .animate__animated.animate__fadeInRight {
+.main-productos .animate__animated.animate__fadeInRight {
   --animate-duration: 5s; }
 
-.main-index .formulario1 {
+body {
+  height: 100vh; }
+
+.main-contacto p {
+  text-align: center;
+  font-size: smaller; }
+
+.main-contacto input {
+  font-family: "Playfair Display", serif;
+  font-size: 15px; }
+
+.main-contacto .contacto {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 10px;
-  padding-bottom: 25px; }
-
-.main-index p {
-  display: flex;
-  justify-content: center;
+  background-color: #7D7C7A;
+  border: 2px black solid;
+  width: 300px;
   text-align: center;
-  font-size: smaller; }
-
-.main-index input {
-  font-family: "Playfair Display", serif;
-  font-size: 15px; }
+  margin: 10px;
+  padding: 15px; }
+  .main-contacto .contacto h1 {
+    font-size: 40px; }
 
 .footer {
   background-color: #5B5B5B;

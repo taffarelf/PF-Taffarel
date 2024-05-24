@@ -1,4 +1,10 @@
-.main-index{
+.main-productos{
+    h1 {
+        font-family: $fuente-principal;
+        font-size: 50px;
+        color: black;
+        text-align: center;
+    }
     .paquetes{
         display: flex;
         flex-direction: row;

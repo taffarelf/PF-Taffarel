@@ -3,33 +3,35 @@
         @extend .main;
     }
     h3{
-        background-color: #C9C19F;
+        font-family: $fuente-principal;
+        font-size: 20px;
+        color: black;
         margin-top: 8px;
     }
     .inicio{
         @extend .flex-column;
         font-family: $fuente-principal;
-    }
-    img{
+        p{
+            font-family: $fuente-principal;
+            color: black;
+            text-align: center;
+        }
+        img{
         width: 400px;
     }
-    p{
-        width: 850px;
-        text-align: center;
-        margin-top: 8px;
     }
-    .carousel{
-        width: 50%;
+    .inicio1{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        @extend .gradiente-horizontal;
+        margin-bottom: 8px;
     }
     .carousel-item{
-        width: auto;
-        height: 500px;
         transition: transform 0s ease-in-out;
     }
     .carousel-item.active{
         display: flex;
-    }
-    button{
-        height: 70px;
     }
 }
