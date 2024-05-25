@@ -1,3 +1,14 @@
+html{
+    height: 100%;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+}
+footer{
+    margin-top: auto;
+}
 .footer {
     background-color: #5B5B5B;
     display: flex;
@@ -6,7 +17,7 @@
     flex-direction: column;
     h4, h5{
         font-family: $fuente-secundaria;
-        font-size: small;
+        font-size: 10px;
         color: black;
     }
     .links{
@@ -16,7 +27,7 @@
             align-items: center;
             li{
                 font-family: $fuente-secundaria;
-                font-size: small;
+                font-size: 8px;
                 color: black;
                 list-style: none;
                 margin-top: 20px;

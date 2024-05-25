@@ -27,7 +27,7 @@ button {
 .gradiente-vertical, .main-index .tipos-de-yoga {
   background-image: linear-gradient(to top, #C9C19f, #7D7C7A); }
 
-.gradiente-horizontal, .main-galeria .inicio1 {
+.gradiente-horizontal, .main-galeria .inicio1, .main-contacto .contacto {
   background-image: linear-gradient(to left, #C9C19F, #7D7C7A); }
 
 * {
@@ -40,21 +40,20 @@ button {
   justify-content: center;
   align-items: center;
   background-color: #C9C19F; }
-  .header .logo img {
-    width: 250px; }
-  .header .navegacion ul {
-    display: flex;
-    justify-content: center;
-    align-items: center; }
-    .header .navegacion ul li {
-      font-family: "Playfair Display", serif;
-      font-size: medium;
+
+.navegacion ul {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .navegacion ul li {
+    font-family: "Playfair Display", serif;
+    font-size: medium;
+    color: black;
+    list-style: none; }
+    .navegacion ul li a {
+      text-decoration: none;
       color: black;
-      list-style: none; }
-      .header .navegacion ul li a {
-        text-decoration: none;
-        color: black;
-        padding: 0 10px; }
+      padding: 0 10px; }
 
 .main-index h1 {
   font-family: "Playfair Display", serif;
@@ -108,10 +107,13 @@ i {
 
 .header {
   padding: 20px; }
-  .header .logo img {
-    width: 60px; }
+
+.navbar {
+  display: none; }
 
 @media (max-width: 577px) {
+  .navbar {
+    display: none; }
   .main-index .inicio {
     display: flex;
     flex-direction: column; }
@@ -127,7 +129,7 @@ i {
     width: 500px; }
   .main-productos .animate__animated.animate__fadeInRight {
     --animate-duration: 5s;
-    height: 40px; } }
+    height: 50px; } }
 
 @media (max-width: 485px) {
   .navegacion {
@@ -140,6 +142,8 @@ i {
   .nav a {
     color: black;
     text-decoration: none; }
+  .navbar {
+    display: block; }
   .collapse {
     background-color: #C9C19F !important;
     font-family: "Playfair Display", serif;
@@ -182,6 +186,28 @@ i {
   .main-contacto .contacto {
     width: 95% !important; } }
 
+@media (max-width: 342px) {
+  .main-index h3 {
+    font-size: 15px; }
+  .main-index .inicio img {
+    width: 200px; }
+  .main-index .inicio p {
+    font-size: 12px; }
+  .main-nosotros .informacion p {
+    font-size: 12px;
+    padding: 10px; }
+  .main-nosotros .informacion-b iframe {
+    width: 310px; }
+  .main-galeria .inicio img {
+    width: 300px !important; }
+  .main-galeria .inicio p {
+    width: 250px;
+    font-size: 12px; }
+  .main-galeria .animate__animated .animate__fadeInRight {
+    height: 55px; }
+  .main-productos .yoga img {
+    width: 250px; } }
+
 .main-galeria h3 {
   font-family: "Playfair Display", serif;
   font-size: 20px;
@@ -210,6 +236,114 @@ i {
 .main-galeria .carousel-item.active {
   display: flex; }
 
+.main-galeria .w-100 {
+  width: 50% !important; }
+
+.main-galeria .carousel-inner {
+  display: flex;
+  justify-content: space-around; }
+
+.main-galeria .carousel-control-prev-icon {
+  background-color: black;
+  width: 100px; }
+
+.main-galeria .carousel-control-next-icon {
+  background-color: black;
+  width: 100px; }
+
+@media (max-width: 577px) {
+  .main-index .inicio {
+    display: flex;
+    flex-direction: column; }
+    .main-index .inicio img {
+      width: 250px; }
+  .main-nosotros .informacion img {
+    width: 250px; }
+  .main-nosotros .informacion p {
+    width: 250px; }
+  .main-nosotros .informacion-b iframe {
+    width: 450px; }
+  .main-galeria .inicio p {
+    width: 500px; }
+  .main-productos .animate__animated.animate__fadeInRight {
+    --animate-duration: 5s;
+    height: 50px; } }
+
+@media (max-width: 485px) {
+  .navegacion {
+    display: none; }
+  .nav {
+    background-color: #C9C19F !important;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+  .nav a {
+    color: black;
+    text-decoration: none; }
+  .collapse {
+    background-color: #C9C19F !important;
+    font-family: "Playfair Display", serif;
+    text-decoration: none; }
+  .collapsing {
+    font-family: "Playfair Display", serif; }
+  .bg-dark {
+    background-color: #C9C19F !important; }
+  .main-index h1 {
+    font-size: 35px; }
+  .main-index h3 {
+    font-size: 20px; }
+  .main-index .tipos-de-yoga .estilos img {
+    width: 250px; }
+  .main-index .tipos-de-yoga .estilos p {
+    font-size: 12px;
+    text-align: center;
+    width: 250px; }
+  .main-nosotros h1 {
+    font-size: 30px; }
+  .main-nosotros .informacion img {
+    width: 200px; }
+  .main-nosotros .informacion p {
+    width: 230px; }
+  .main-nosotros .informacion-b iframe {
+    width: 350px; }
+  .main-nosotros .clases-prescenciales iframe {
+    width: 300px; }
+  .main-galeria h1 {
+    font-size: 30px; }
+  .main-galeria .inicio img {
+    width: 350px !important; }
+  .main-galeria .inicio p {
+    width: 350px; }
+  .main-productos h1 {
+    font-size: 30px !important; }
+  .main-contacto h1 {
+    font-size: 30px;
+    color: black; }
+  .main-contacto .contacto {
+    width: 95% !important; } }
+
+@media (max-width: 342px) {
+  .main-index h3 {
+    font-size: 15px; }
+  .main-index .inicio img {
+    width: 200px; }
+  .main-index .inicio p {
+    font-size: 12px; }
+  .main-nosotros .informacion p {
+    font-size: 12px;
+    padding: 10px; }
+  .main-nosotros .informacion-b iframe {
+    width: 310px; }
+  .main-galeria .inicio img {
+    width: 300px !important; }
+  .main-galeria .inicio p {
+    width: 250px;
+    font-size: 12px; }
+  .main-galeria .animate__animated .animate__fadeInRight {
+    height: 55px; }
+  .main-productos .yoga img {
+    width: 250px; } }
+
 .main-nosotros h3 {
   font-family: "Playfair Display", serif;
   background-color: #c9c19f;
@@ -237,6 +371,99 @@ i {
   color: black;
   width: 300px;
   padding: 35px; }
+
+@media (max-width: 577px) {
+  .main-index .inicio {
+    display: flex;
+    flex-direction: column; }
+    .main-index .inicio img {
+      width: 250px; }
+  .main-nosotros .informacion img {
+    width: 250px; }
+  .main-nosotros .informacion p {
+    width: 250px; }
+  .main-nosotros .informacion-b iframe {
+    width: 450px; }
+  .main-galeria .inicio p {
+    width: 500px; }
+  .main-productos .animate__animated.animate__fadeInRight {
+    --animate-duration: 5s;
+    height: 50px; } }
+
+@media (max-width: 485px) {
+  .navegacion {
+    display: none; }
+  .nav {
+    background-color: #C9C19F !important;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+  .nav a {
+    color: black;
+    text-decoration: none; }
+  .collapse {
+    background-color: #C9C19F !important;
+    font-family: "Playfair Display", serif;
+    text-decoration: none; }
+  .collapsing {
+    font-family: "Playfair Display", serif; }
+  .bg-dark {
+    background-color: #C9C19F !important; }
+  .main-index h1 {
+    font-size: 35px; }
+  .main-index h3 {
+    font-size: 20px; }
+  .main-index .tipos-de-yoga .estilos img {
+    width: 250px; }
+  .main-index .tipos-de-yoga .estilos p {
+    font-size: 12px;
+    text-align: center;
+    width: 250px; }
+  .main-nosotros h1 {
+    font-size: 30px; }
+  .main-nosotros .informacion img {
+    width: 200px; }
+  .main-nosotros .informacion p {
+    width: 230px; }
+  .main-nosotros .informacion-b iframe {
+    width: 350px; }
+  .main-nosotros .clases-prescenciales iframe {
+    width: 300px; }
+  .main-galeria h1 {
+    font-size: 30px; }
+  .main-galeria .inicio img {
+    width: 350px !important; }
+  .main-galeria .inicio p {
+    width: 350px; }
+  .main-productos h1 {
+    font-size: 30px !important; }
+  .main-contacto h1 {
+    font-size: 30px;
+    color: black; }
+  .main-contacto .contacto {
+    width: 95% !important; } }
+
+@media (max-width: 342px) {
+  .main-index h3 {
+    font-size: 15px; }
+  .main-index .inicio img {
+    width: 200px; }
+  .main-index .inicio p {
+    font-size: 12px; }
+  .main-nosotros .informacion p {
+    font-size: 12px;
+    padding: 10px; }
+  .main-nosotros .informacion-b iframe {
+    width: 310px; }
+  .main-galeria .inicio img {
+    width: 300px !important; }
+  .main-galeria .inicio p {
+    width: 250px;
+    font-size: 12px; }
+  .main-galeria .animate__animated .animate__fadeInRight {
+    height: 55px; }
+  .main-productos .yoga img {
+    width: 250px; } }
 
 .main-productos h1 {
   font-family: "Playfair Display", serif;
@@ -303,32 +530,234 @@ i {
   margin-top: 20px; }
 
 .main-productos .animate__animated.animate__fadeInRight {
-  --animate-duration: 5s; }
+  --animate-duration: 5s;
+  height: 50px; }
 
-body {
-  height: 100vh; }
+@media (max-width: 577px) {
+  .main-index .inicio {
+    display: flex;
+    flex-direction: column; }
+    .main-index .inicio img {
+      width: 250px; }
+  .main-nosotros .informacion img {
+    width: 250px; }
+  .main-nosotros .informacion p {
+    width: 250px; }
+  .main-nosotros .informacion-b iframe {
+    width: 450px; }
+  .main-galeria .inicio p {
+    width: 500px; }
+  .main-productos .animate__animated.animate__fadeInRight {
+    --animate-duration: 5s;
+    height: 50px; } }
+
+@media (max-width: 485px) {
+  .navegacion {
+    display: none; }
+  .nav {
+    background-color: #C9C19F !important;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+  .nav a {
+    color: black;
+    text-decoration: none; }
+  .collapse {
+    background-color: #C9C19F !important;
+    font-family: "Playfair Display", serif;
+    text-decoration: none; }
+  .collapsing {
+    font-family: "Playfair Display", serif; }
+  .bg-dark {
+    background-color: #C9C19F !important; }
+  .main-index h1 {
+    font-size: 35px; }
+  .main-index h3 {
+    font-size: 20px; }
+  .main-index .tipos-de-yoga .estilos img {
+    width: 250px; }
+  .main-index .tipos-de-yoga .estilos p {
+    font-size: 12px;
+    text-align: center;
+    width: 250px; }
+  .main-nosotros h1 {
+    font-size: 30px; }
+  .main-nosotros .informacion img {
+    width: 200px; }
+  .main-nosotros .informacion p {
+    width: 230px; }
+  .main-nosotros .informacion-b iframe {
+    width: 350px; }
+  .main-nosotros .clases-prescenciales iframe {
+    width: 300px; }
+  .main-galeria h1 {
+    font-size: 30px; }
+  .main-galeria .inicio img {
+    width: 350px !important; }
+  .main-galeria .inicio p {
+    width: 350px; }
+  .main-productos h1 {
+    font-size: 30px !important; }
+  .main-contacto h1 {
+    font-size: 30px;
+    color: black; }
+  .main-contacto .contacto {
+    width: 95% !important; } }
+
+@media (max-width: 342px) {
+  .main-index h3 {
+    font-size: 15px; }
+  .main-index .inicio img {
+    width: 200px; }
+  .main-index .inicio p {
+    font-size: 12px; }
+  .main-nosotros .informacion p {
+    font-size: 12px;
+    padding: 10px; }
+  .main-nosotros .informacion-b iframe {
+    width: 310px; }
+  .main-galeria .inicio img {
+    width: 300px !important; }
+  .main-galeria .inicio p {
+    width: 250px;
+    font-size: 12px; }
+  .main-galeria .animate__animated .animate__fadeInRight {
+    height: 55px; }
+  .main-productos .yoga img {
+    width: 250px; } }
 
 .main-contacto p {
   text-align: center;
-  font-size: smaller; }
+  font-family: "Playfair Display", serif;
+  font-size: smaller;
+  color: black; }
 
 .main-contacto input {
   font-family: "Playfair Display", serif;
-  font-size: 15px; }
+  font-size: 15px;
+  text-align: center; }
 
 .main-contacto .contacto {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #7D7C7A;
-  border: 2px black solid;
+  border: 2px #5B5B5B solid;
   width: 300px;
   text-align: center;
-  margin: 10px;
-  padding: 15px; }
+  margin: 0 auto;
+  padding: 15px;
+  border-radius: 20px; }
   .main-contacto .contacto h1 {
     font-size: 40px; }
+
+.main-contacto .formulario input {
+  padding: 5px;
+  border-radius: 5px; }
+
+@media (max-width: 577px) {
+  .main-index .inicio {
+    display: flex;
+    flex-direction: column; }
+    .main-index .inicio img {
+      width: 250px; }
+  .main-nosotros .informacion img {
+    width: 250px; }
+  .main-nosotros .informacion p {
+    width: 250px; }
+  .main-nosotros .informacion-b iframe {
+    width: 450px; }
+  .main-galeria .inicio p {
+    width: 500px; }
+  .main-productos .animate__animated.animate__fadeInRight {
+    --animate-duration: 5s;
+    height: 50px; } }
+
+@media (max-width: 485px) {
+  .navegacion {
+    display: none; }
+  .nav {
+    background-color: #C9C19F !important;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+  .nav a {
+    color: black;
+    text-decoration: none; }
+  .collapse {
+    background-color: #C9C19F !important;
+    font-family: "Playfair Display", serif;
+    text-decoration: none; }
+  .collapsing {
+    font-family: "Playfair Display", serif; }
+  .bg-dark {
+    background-color: #C9C19F !important; }
+  .main-index h1 {
+    font-size: 35px; }
+  .main-index h3 {
+    font-size: 20px; }
+  .main-index .tipos-de-yoga .estilos img {
+    width: 250px; }
+  .main-index .tipos-de-yoga .estilos p {
+    font-size: 12px;
+    text-align: center;
+    width: 250px; }
+  .main-nosotros h1 {
+    font-size: 30px; }
+  .main-nosotros .informacion img {
+    width: 200px; }
+  .main-nosotros .informacion p {
+    width: 230px; }
+  .main-nosotros .informacion-b iframe {
+    width: 350px; }
+  .main-nosotros .clases-prescenciales iframe {
+    width: 300px; }
+  .main-galeria h1 {
+    font-size: 30px; }
+  .main-galeria .inicio img {
+    width: 350px !important; }
+  .main-galeria .inicio p {
+    width: 350px; }
+  .main-productos h1 {
+    font-size: 30px !important; }
+  .main-contacto h1 {
+    font-size: 30px;
+    color: black; }
+  .main-contacto .contacto {
+    width: 95% !important; } }
+
+@media (max-width: 342px) {
+  .main-index h3 {
+    font-size: 15px; }
+  .main-index .inicio img {
+    width: 200px; }
+  .main-index .inicio p {
+    font-size: 12px; }
+  .main-nosotros .informacion p {
+    font-size: 12px;
+    padding: 10px; }
+  .main-nosotros .informacion-b iframe {
+    width: 310px; }
+  .main-galeria .inicio img {
+    width: 300px !important; }
+  .main-galeria .inicio p {
+    width: 250px;
+    font-size: 12px; }
+  .main-galeria .animate__animated .animate__fadeInRight {
+    height: 55px; }
+  .main-productos .yoga img {
+    width: 250px; } }
+
+html {
+  height: 100%; }
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%; }
+
+footer {
+  margin-top: auto; }
 
 .footer {
   background-color: #5B5B5B;
@@ -338,7 +767,7 @@ body {
   flex-direction: column; }
   .footer h4, .footer h5 {
     font-family: "Radio Canada Big", sans-serif;
-    font-size: small;
+    font-size: 10px;
     color: black; }
   .footer .links ul {
     display: flex;
@@ -346,7 +775,7 @@ body {
     align-items: center; }
     .footer .links ul li {
       font-family: "Radio Canada Big", sans-serif;
-      font-size: small;
+      font-size: 8px;
       color: black;
       list-style: none;
       margin-top: 20px;
